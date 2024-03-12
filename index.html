@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      #userTable {
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+      #userTable th, #userTable td {
+        padding: 0.25rem;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="userForm">
+      <h1>Login Form</h1>
+      <div class="UserInput">
+        <input type="text" name="fname" id="fnameid" placeholder="FirstName" />
+        <input type="text" name="lname" id="lnameid" placeholder="LAstName" />
+        <input type="number" id="numid" placeholder="Phone Number" />
+        <input type="email" id="emailid" placeholder="Email" />
+      </div>
+
+      <div class="operator">
+        <button id="Create">Create</button>
+        <button id="Update">Update</button>
+        <button id="Read">Read</button>
+      </div>
+    </form>
+
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>SN</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody"></tbody>
+    </table>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="crud.js"></script>
+  </body>
+</html>

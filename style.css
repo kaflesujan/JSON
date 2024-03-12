@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  row-gap: 0.5rem;
+}
+.UserInput {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 0.5rem;
+  border: 0.02rem solid black;
+  border-radius: 5px;
+}
+.operator {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+  column-gap: 5rem;
+}
